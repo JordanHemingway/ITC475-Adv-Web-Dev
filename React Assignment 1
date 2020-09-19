@@ -1,0 +1,396 @@
+header{
+    background-color: #add8e6;
+    margin:0 auto;
+    padding: 20px;
+    
+}
+
+body{
+  margin:0 auto;
+}
+
+
+hr.solid{
+    border-top: 10px solid;
+    color: #d3d3d3;
+}
+
+.topnav {
+    overflow: hidden;
+    padding-left:45%;
+    padding-top: 15px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: center;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    position:relative;
+    top:0;
+    transition: top .5s, color .5s;
+    
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    
+    color: #ffa500;
+    top:-10px;
+    text-decoration: none;
+    
+    
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+h2{
+    padding-left: 90px;
+    font-size: 3vw;
+}
+
+p{
+    text-align:left;
+    padding-right:55%;
+    padding-left:125px;
+    padding-bottom:20px;
+    font-size: 1vw;
+}
+
+
+footer{
+    color:white;
+    background-color: #000000;
+    display:inline-block;
+    margin: 0 auto;
+    width:100%;
+}
+
+img{
+    width: 500px;
+    height: auto;
+    
+    
+}
+
+div.gallery {
+    margin-left:10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+    
+  }
+  
+  div.gallery:hover {
+    border: 5px solid #777;
+    transition: background-color 1s linear;
+    background-color: #000000;
+    color: #ccc;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  ul{
+      list-style: none;
+  }
+
+  .saving{
+      color:green; 
+  }
+div.collection{
+  margin-left:25%;
+}
+
+label#greeting{
+  font-size: 1.25vw;
+  float:center;
+  padding-left:300px;
+  
+}
+
+p#time{
+  font-size: 1vw;
+  float:center;
+  padding:0em;
+  padding-left:800px;
+}
+
+img{
+  width:300px;;
+  height: auto;
+}
+
+
+
+
+
+<!-- Jordan Hemingway 
+ITC 475
+Dr. Ford
+9/19/2020-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mega Travel</title>
+        <link rel="stylesheet" href="megatravel.css">
+        <header>
+            <img src="mega travel logo.png" alt="Logo">
+            <label id="greeting"></label>
+            <p id="time"></p>
+            <script>
+                var myDate = new Date();
+                var hrs = myDate.getHours();
+                var greet;
+                var current = new Date();
+                var day_night=current.getHours();
+                var d = new Date();
+    
+            //display sun or moon//
+                 if (day_night<=12)
+                document.write("<img src='day.png'>")
+                else
+                document.write("<img src='night.png'>")
+                
+            //Display the current date and time//
+                document.getElementById("time").innerHTML = d;
+    
+               
+    
+            //display a greeting message//
+                if (hrs < 12)
+                  greet = 'Good Morning';
+                else if (hrs >= 12 && hrs <= 17)
+                  greet = 'Good Afternoon';
+                 else if (hrs >= 17 && hrs <= 24)
+                 greet = 'Good Evening';
+                document.getElementById('greeting').innerHTML =
+            '<b>' + greet + '</b>' + ' the current date and time is ';
+                
+              </script>
+        </header>
+        <hr class="solid">
+        <div class="topnav" id="myTopnav">
+            <a href="mega_travel_site.html" >Home</a>
+            <a href="about_us.html"class="active">About Us</a>
+            <a href="contact_agent.html">Contact Agent</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        <body>
+        </body>
+        <footer>
+            <p>Copytright Protected All Rights Reserved</p>
+            <p>MEGA TRAVELS</p>
+            <p>mega@travels.com</p>
+        </footer>
+    </head>
+</html>
+<!-- Jordan Hemingway 
+ITC 475
+Dr. Ford
+9/19/2020-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mega Travel</title>
+        <link rel="stylesheet" href="megatravel.css">
+        <header>
+            <img src="mega travel logo.png" alt="Logo">
+            <label id="greeting"></label>
+            <p id="time"></p>
+            <script>
+                var myDate = new Date();
+                var hrs = myDate.getHours();
+                var greet;
+                var current = new Date();
+                var day_night=current.getHours();
+                var d = new Date();
+    
+             //display sun or moon//
+                 if (day_night<=12)
+                document.write("<img src='day.png'>")
+                else
+                document.write("<img src='night.png'>")
+                
+            //Display the current date and time//
+                document.getElementById("time").innerHTML = d;
+    
+            //display a greeting message//
+                if (hrs < 12)
+                  greet = 'Good Morning';
+                else if (hrs >= 12 && hrs <= 17)
+                  greet = 'Good Afternoon';
+                 else if (hrs >= 17 && hrs <= 24)
+                 greet = 'Good Evening';
+                document.getElementById('greeting').innerHTML =
+            '<b>' + greet + '</b>' + ' the current date and time is ';
+                
+              </script>
+        </header>
+        <hr class="solid">
+        <div class="topnav" id="myTopnav">
+            <a href="mega_travel_site.html" >Home</a>
+            <a href="about_us.html"class="active">About Us</a>
+            <a href="contact_agent.html">Contact Agent</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        <body>
+        </body>
+        <footer>
+            <p>Copytright Protected All Rights Reserved</p>
+            <p>MEGA TRAVELS</p>
+            <p>mega@travels.com</p>
+        </footer>
+    </head>
+</html>
+
+
+
+<!-- Jordan Hemingway 
+ITC 475
+Dr. Ford
+9/19/2020-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mega Travel</title>
+        <link rel="stylesheet" href="megatravel.css">
+        <header>
+            <img src="mega travel logo.png" alt="Logo">
+           <label id="greeting"></label>
+           <p id="time"></p>
+           <script>
+            var myDate = new Date();
+            var hrs = myDate.getHours();
+            var greet;
+            var current = new Date();
+            var day_night=current.getHours();
+            var d = new Date();
+
+          //display sun or moon//
+             if (day_night<=12)
+            document.write("<img src='day.png'>")
+            else
+            document.write("<img src='night.png'>")
+            
+          //Display the current date and time//
+            document.getElementById("time").innerHTML = d;
+
+           
+
+          //display a greeting message//
+            if (hrs < 12)
+              greet = 'Good Morning';
+            else if (hrs >= 12 && hrs <= 17)
+              greet = 'Good Afternoon';
+             else if (hrs >= 17 && hrs <= 24)
+             greet = 'Good Evening';
+            document.getElementById('greeting').innerHTML =
+        '<b>' + greet + '</b>' + ' the current date and time is ';
+            
+          </script>
+          
+        </header>
+        <hr class="solid">
+        <div class="topnav" id="myTopnav">
+            <a href="mega_travel_site.html" class="active">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_agent.html">Contact Agent</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        <body>
+            <h2>Travel Packages</h2>
+            <p>We are specialized international Travels and Tours. 
+                Our expertize and experience can save you 100's of dollars in your pocket. 
+                Beside the money you can also save your valuable time at the time of transit or tour, 
+                You decide your budget and the time from your comfort zone. We will make it happen for 
+                you for an exceptional memory. Mega Travels is committed for an excellent service and support
+                 for all of its past, present and future customers. We are here today only for you. We remind 
+                 ourself everyday and every moment with a sincere gratitude.</p>
+                 <div class="collection">
+                 <div class="gallery">
+                    <a target="_blank" href="maldives.PNG">
+                      <img src="maldives.PNG" alt="maldives" width="600" height="400">
+                    </a>
+                    <div class="desc"><b>Maldives Resort</b>
+                    <ul>
+                        <li>$1800.99</li>
+                        <li>Price you pay <b><u>$999.99</u></b></li>
+                        <li class="saving">Your saving $801</li>
+                    </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="gallery">
+                    <a target="_blank" href="mexico.PNG">
+                      <img src="mexico.PNG" alt="Mexico" width="600" height="400">
+                    </a>
+                    <div class="desc"><b>Mexico Resort (All inclusive!)</b>
+                        <ul>
+                            <li>$2999.99</li>
+                            <li>Price you pay <b><u>$2199.99</u></b></li>
+                            <li class="saving">Your saving $800</li>
+                        </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="gallery">
+                    <a target="_blank" href="newzealand.PNG">
+                      <img src="newzealand.PNG" alt="new_zealand" width="600" height="400">
+                    </a>
+                    <div class="desc"><b>New Zealand Trek</b>
+                        <ul>
+                            <li>$2499.00</li>
+                            <li>Price you pay <b><u>$2100.00</u></b></li>
+                            <li class="saving">Your saving $399</li>
+                        </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="gallery">
+                    <a target="_blank" href="venice.PNG">
+                      <img src="venice.PNG" alt="venice" width="600" height="400">
+                    </a>
+                    <div class="desc"><b>Venice Italy</b>
+                        <ul>
+                            <li>$4100.00</li>
+                            <li>Price you pay <b><u>$3699.00</u></b></li>
+                            <li class="saving">Your saving $400</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+        </body>
+        <footer>
+            <p>Copytright Protected All Rights Reserved</p>
+            <p>MEGA TRAVELS</p>
+            <p>mega@travels.com</p>
+        </footer>
+    </head>
+</html>
