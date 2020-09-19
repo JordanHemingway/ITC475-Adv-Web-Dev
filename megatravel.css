@@ -1,13 +1,14 @@
 header{
     background-color: #add8e6;
     margin:0 auto;
-    padding: 50px;
+    padding: 20px;
     
 }
 
 body{
   margin:0 auto;
 }
+
 
 hr.solid{
     border-top: 10px solid;
@@ -50,15 +51,16 @@ hr.solid{
   }
 
 h2{
-    padding-left: 50px;
+    padding-left: 90px;
+    font-size: 3vw;
 }
 
 p{
     text-align:left;
-    padding-right:75%;
-    padding-left:75px;
+    padding-right:55%;
+    padding-left:125px;
     padding-bottom:20px;
-    font-size: 20px;
+    font-size: 1vw;
 }
 
 
@@ -73,6 +75,7 @@ footer{
 img{
     width: 500px;
     height: auto;
+    
     
 }
 
@@ -109,5 +112,25 @@ div.gallery {
   .saving{
       color:green; 
   }
+div.collection{
+  margin-left:25%;
+}
 
+label#greeting{
+  font-size: 1.25vw;
+  float:center;
+  padding-left:300px;
+  
+}
 
+p#time{
+  font-size: 1vw;
+  float:center;
+  padding:0em;
+  padding-left:800px;
+}
+
+img{
+  width:300px;;
+  height: auto;
+}
