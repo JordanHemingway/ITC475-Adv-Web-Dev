@@ -185,3 +185,23 @@ th, td {
   background-color: black;
   color: white;
 }
+
+div#activities{
+  display: block;
+}
+
+form{
+  margin-left:300px;
+  border: 5px;
+}
+
+form#ContactForm{
+  margin-left: 0px;
+  
+}
+h4{
+  margin-top: 10px;
+  margin-bottom:10px;
+  font-weight: 0;
+}
+
