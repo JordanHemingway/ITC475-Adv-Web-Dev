@@ -1,5 +1,4 @@
 
-
 class Activities extends React.Component{
     constructor(){
         super();
@@ -267,3 +266,122 @@ ReactDOM.render(
             ),
             document.getElementById('activities')
 );
+
+
+
+class UserForm extends React.Component {
+    constructor() {
+      super();
+      this.state = {
+        fname: "",
+        lname: "",
+        email: "",
+        phone: "",
+        party: "",
+        date: "",
+      };
+      this.handleChange = this.handleChange.bind(this);
+    }
+  
+    handleChange(event){
+        const {name, value, type } = event.target;
+        type == "text" ?
+            this.setState({[name]: text}) : this.setState({[name]: value});
+    }
+  
+    render() {
+        const { fname, lname, email, phone, party, date } = this.state;
+      return (
+        React.createElement("form", null,
+        React.createElement("br", null),
+        "First Name",
+        React.createElement("br", null),
+        
+          React.createElement("input",{
+            type: "text",
+            name:"fname",
+            value: this.state.fname,
+            onChange:this.handleChange}),
+
+            React.createElement("br", null),
+
+            "Last Name",
+            React.createElement("br", null),
+          
+            React.createElement("input",{
+                type:"text",
+                name:"lname",
+                value:this.state.lname,
+                onChange:this.handleChange}),
+
+                React.createElement("br", null),
+
+                "Email",
+            React.createElement("br", null),
+  
+            React.createElement("input",{
+                type:"email",
+                name:"email",
+                value:this.state.email,
+                 onChange:this.handleChange}),
+
+                 React.createElement("br", null),
+
+                 "Phone Number",
+            React.createElement("br", null),
+           
+            React.createElement("input",{
+                type:"phonenumber",
+                name:"phone",
+                value:this.state.phone,
+                onChange:this.handleChange}),
+
+                React.createElement("br", null),
+
+                "How many in your party?",
+            React.createElement("br", null),
+  
+            React.createElement("input",{
+            type:"number",
+            name:"party",
+            value:this.state.party,
+            onChange:this.handleChange}),
+
+            React.createElement("br", null),
+
+            "When are you traveling?",
+            React.createElement("br", null),
+  
+            React.createElement("input",{
+            type:"date",
+            name:"date",
+            value:this.state.date,
+            onChange:this.handleChange}),
+
+            React.createElement("br", null),
+            React.createElement("br", null),
+           
+
+
+            
+            React.createElement("button",  {
+            
+              onClick: this.onClick,
+              disabled: this.state.disabled,
+            }, this.state.label)
+  
+        
+      ));
+      
+    }
+    
+  }
+  
+  ReactDOM.render(
+    React.createElement("form", {id: 'ContactForm', method: 'post', action: ''},
+        React.createElement('h4', null, ""),
+            React.createElement(UserForm, null),
+            ),
+            document.getElementById('button')
+  );
+
